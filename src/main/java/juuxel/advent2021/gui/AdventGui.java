@@ -7,6 +7,7 @@ import juuxel.advent2021.java.Advent4;
 import juuxel.advent2021.java.Advent5;
 import juuxel.advent2021.java.Advent5Linear;
 import juuxel.advent2021.java.Advent6;
+import juuxel.advent2021.kotlin.Advent3Kt;
 import org.cactoos.io.OutputStreamTo;
 import org.cactoos.io.TeeOutputStream;
 
@@ -43,8 +44,10 @@ public final class AdventGui {
         new Solution("Day 1 (part 2)", 1, linesToArgs(Advent1::part2)),
         new Solution("Day 2 (part 1)", 2, linesToArgs(Advent2::part1)),
         new Solution("Day 2 (part 2)", 2, linesToArgs(Advent2::part2)),
-        new Solution("Day 3 (part 1)", 3, linesToArgs(Advent3::part1)),
-        new Solution("Day 3 (part 2)", 3, linesToArgs(Advent3::part2)),
+        new Solution("Day 3 (part 1, Java)", 3, linesToArgs(Advent3::part1)),
+        new Solution("Day 3 (part 2, Java)", 3, linesToArgs(Advent3::part2)),
+        new Solution("Day 3 (part 1, Kotlin)", 3, linesToArgs(Advent3Kt::part1)),
+        new Solution("Day 3 (part 2, Kotlin)", 3, linesToArgs(Advent3Kt::part2)),
         new Solution("Day 4 (part 1)", 4, Advent4::part1),
         new Solution("Day 4 (part 2)", 4, Advent4::part2),
         new Solution("Day 5 (part 1)", 5, linesToArgs(Advent5::part1)),
