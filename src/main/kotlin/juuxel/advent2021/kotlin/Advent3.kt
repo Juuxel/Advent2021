@@ -15,14 +15,11 @@ private fun gammaRate(numbers: List<Int>): Int {
     return gammaRate
 }
 
-private fun epsilonRate(gammaRate: Int, bitWidth: Int) =
-    gammaRate.inv() and ((1 shl bitWidth) - 1)
-
 fun part1(lines: Array<String>) {
     val bitWidth = lines.first().length
     val numbers = lines.map { it.toInt(radix = 2) }
     val gammaRate = gammaRate(numbers)
-    val epsilonRate = epsilonRate(gammaRate, bitWidth)
+    val epsilonRate = gammaRate.inv() and ((1 shl bitWidth) - 1)
     println(gammaRate * epsilonRate)
 }
 
