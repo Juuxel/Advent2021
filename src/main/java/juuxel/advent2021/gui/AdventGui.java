@@ -79,7 +79,7 @@ public final class AdventGui {
             JScrollPane outputScroll = new JScrollPane(output);
             JSplitPane sideSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT, new JScrollPane(solutions), inputArea);
             JSplitPane mainSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, sideSplit, outputScroll);
-            JFrame frame = new JFrame("Advent of Code 2020");
+            JFrame frame = new JFrame("Advent of Code 2021");
 
             IntConsumer setData = day -> {
                 try {
